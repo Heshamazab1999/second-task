@@ -1,0 +1,172 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<title>Sign in</title>
+<style type="text/css">
+		
+        /* Style the tab */
+        .tab {
+        float: right;
+        border: 1px solid #ccc;
+        background-color: #646768;
+        width: 25%;
+        height: 420px;
+        margin-top: 120px
+        }
+        div.tab{
+            opacity: 0.4;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: white;
+            padding: 40px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+           background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+           background-color:#fff ;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 300px;
+        }
+        
+        body {
+            background-image: url(h.jpg);
+            background-size: 100% 100%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+
+        .login{  
+            width: 382px;  
+            overflow: hidden;  
+            margin: auto;  
+            margin: 20 0 0 350px;  
+            padding: 80px;  
+            background: #23463f;  
+            border-radius: 15px ;  
+            
+        }  
+        h2{  
+            text-align: center;  
+            color: #277582;  
+            padding: 20px;  
+        }  
+        label{  
+            color: #08ffd1;  
+            font-size: 17px;  
+        }  
+        #Uname{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 3px;  
+            padding-left: 8px;  
+        }  
+        #Pass{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 3px;  
+            padding-left: 8px;  
+            
+        }  
+        #log{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            border-radius: 17px;  
+            padding-left: 7px;  
+            color: blue;  
+        
+        
+        }  
+        span{  
+            color: white;  
+            font-size: 17px;  
+        }  
+        a{  
+            float: right;  
+            background-color: grey;  
+        }  
+
+        form.form1 {
+            padding-top: 40px;
+
+        }
+         .forgot {
+            text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+            color: #E1BEE7;
+            padding-top: 15px;
+        }
+        
+        a {
+            text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+            color: #E1BEE7;
+            text-decoration: none
+        }
+        
+        @media (max-width: 600px) {
+            .main {
+                border-radius: 0px;
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">HOME</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">ABOUT</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">SERVICES</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">CONTACT</button>
+    </div>
+
+        <h2>Login Page</h2><br>    
+
+    <div class="login">    
+        <form id="login" method="get" action="login.php">    
+            <label><b>User Name     
+            </b>    
+            </label>    
+            <input type="text" name="Uname" id="Uname" placeholder="Username">    
+            <br><br>    
+            <label><b>Password     
+            </b>    
+            </label>    
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+            <br><br>    
+            <input type="button" name="log" id="log" value="Log In Here">       
+            <br><br>    
+            <input type="checkbox" id="check">    
+            <span>Remember me</span>    
+            <br><br>    
+            Forgot <a href="#">Password</a>    
+        </form>     
+    </div>    
+
+</body>
+</html>
